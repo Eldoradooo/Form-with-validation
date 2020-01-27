@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+
+<head><b>
+    <meta charset="utf-8">
+    <h1 id="heading">Formularz rejestracyjny</h1>
+    <meta name="author" content="Krzysztof Móżdżyński">
+  </b></head>
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="scripts.js"></script>
+
+<body>
+  <div>
+    <form name="Formularz" id="formularz" action="https://pi.iem.pw.edu.pl/register" method="POST"
+      enctype="multipart/form-data" onsubmit="validateForm(this); return false;">
+      <li><input id="login" class="form-control" onchange="validateLogin()" type="text" name="login" placeholder="Login"
+          pattern="[a-z]{3,12}" required></li>
+      <li><input id="password" class="form-control" onchange="validatePassword()" type="password" name="password"
+          placeholder="Hasło" required></li>
+      <li><input id="password2" class="form-control" onchange="validatePasswordRepeat()" type="password"
+          name="password2" placeholder="Powtórz hasło" required></li>
+      <li><input id="firstname" class="form-control" onchange="validateFirstName()" type="text" name="firstname"
+          placeholder="Imię" required></li>
+      <li><input id="lastname" class="form-control" onchange="validateLastName()" type="text" name="lastname"
+          placeholder="Nazwisko" required></li>
+      <li><input id="birthdate" class="form-control" onchange="validateBirthdate()" type="date" name="birthdate"
+          placeholder="Data urodzenia" required></li>
+      <li><input id="pesel" class="form-control" onchange="validatePeselAndSetSex()" type="text" name="pesel"
+          placeholder="Pesel" required></li>
+      Płeć:
+      <li><input id="female" class="form-check-input gender" type="radio" name="sex" value="F" /> Kobieta</li>
+      <li><input id="male" class="form-check-input gender" type="radio" name="sex" value="M" checked /> Mężczyzna</li>
+      Zdjęcie:
+      <li><input id="photo" class="form-control-file form-group" onchange="validateFile()" type="file" name="photo"
+          placeholder="Zdjęcie" required></li>
+      <li><input type="submit" /></li>
+  </div>
+  </form>
+</body>
+
+</html>

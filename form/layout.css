@@ -1,0 +1,55 @@
+input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 25%;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=file] {
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+LI {list-style-type: none}
+
+
+.invalid_data {
+  color: red;
+  font-size: 10px;
+	padding-left: 5px;
+}
+
+#heading {
+  font-size: 35px;
+  padding-left: 10px;
+}
